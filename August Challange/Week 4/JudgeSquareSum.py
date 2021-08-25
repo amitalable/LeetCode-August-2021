@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/sum-of-square-numbers/
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         l = list(map(lambda x: x*x, range(int(c**0.5+1))))
