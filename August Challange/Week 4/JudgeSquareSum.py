@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/sum-of-square-numbers/
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
-        l = list(map(lambda x: x*x, range(int(c**0.5+1))))
         start = 0
-        end = len(l)-1
+        end = int(c**0.5)
         while end >= start:
-            temp = l[end] + l[start]
+            temp = start**2 + end**2
             if temp > c:
                 end -= 1
             elif temp < c:
